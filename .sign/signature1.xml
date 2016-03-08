@@ -12,11 +12,11 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>/c1DnCvjhvSv6w0dv28PMYm5SlAlB28QgzGylLyjTMI=</DigestValue>
+<DigestValue>/5w08uHcR4NL4DIETz/C4zNwJjtNmrMyUQ+q0C/0cjU=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>qxiYx41JGM4J4trYN2A1GaUoP+tkeNCk9SEPE6naYEg=</DigestValue>
+<DigestValue>O6v46AUi2cHENkbjtU7mMuX5Z/g48WEvLBWzpXv6g0Y=</DigestValue>
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -32,11 +32,11 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>nl6EaGD0fLpN6w37G3gdbVniuFB76nWcwq83URSx7wI=</DigestValue>
+<DigestValue>pOl/WV+8ucUr+pY0MayrsXQskBMzvNWCOQ3AVQiZs8o=</DigestValue>
 </Reference>
 <Reference URI="js%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>gt3Gq78C8DHyEMY48+L/G+qZyuHr98+HZX1sTv83qys=</DigestValue>
+<DigestValue>UGKBRPN7Tvlht+2+q8g+TsccVHDFygRjcT6P8xnLDaI=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -47,11 +47,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-NiXek5jrw73xeBJUgm9l73lQsQ4DTa2O8oQ1DCTh8O+Vkrf7MeGieyFL9VooQ4xTD79YM8SUmLu4
-8PETBXI01YQB7sd/FqSdFaTjxqGzE7RTxvj7bCRoZc1whjkbHpecfWqFHp1XHN0aEdz/zciYE9Uk
-W5Tm7cBLShogl3V+0dV/qobNYxiBeGoqg94HZw/bEFU/l7jt+QpCaXgX/k/DkBp6Whm5O85PGOSn
-kEl9DIMnkTvLQSZvrGfXs4gFlzDv8f/qIgeFwXQoj3xmrqYTKKCFqPyYKRDLmfPvq/5nNROu3DDj
-8VfOYH3QYoRvFUa4OHNlObhZJXGm7/tEw8i5Pw==
+DoATwtvJ/0DZPsj6cuRP24WR2sgJuAnrSn01VoGio+LOATDZMaJKyY/P1GokDuod/mjuLDzjwMX4
+2FexYjB57GBEmc56K4AvC3AqBq25JGKAn8OIR4RGLGHyicpVtAf9nm//ROLG2b2UKGmGzDkgey0J
+7HmOn+XZyTYuYF93n1Lco1ykz40Ktql3nBQKpmGpkSc81+wE+40qEVqzyCiyeQo7ss5cfiZQhyiM
+ZtIA9IhRQ8+Gi1gUoSW7His0VbVPPlBjr2wn7GTls4JTzAdgMWMLbaOFYn9kiS6aH1LuAewNdqQI
+eNfUW/21Grp/JYrX3pkUTdFB7p031kslp46RBA==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

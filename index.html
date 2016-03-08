@@ -1,39 +1,9 @@
-<!--
-- Copyright (c) 2013 Samsung Electronics Co., Ltd.   
-- All rights reserved.   
--   
-- Redistribution and use in source and binary forms, with or without   
-- modification, are permitted provided that the following conditions are   
-- met:   
--   
--     * Redistributions of source code must retain the above copyright   
--        notice, this list of conditions and the following disclaimer.  
--     * Redistributions in binary form must reproduce the above  
--        copyright notice, this list of conditions and the following disclaimer  
--        in the documentation and/or other materials provided with the  
--        distribution.  
--     * Neither the name of Google Inc. nor the names of its  
--       contributors may be used to endorse or promote products derived from  
--       this software without specific prior written permission.  
--  
-- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS  
-- "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT  
-- LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR  
-- A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  
-- OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,  
-- SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT  
-- LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,  
-- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY  
-- THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT  
-- (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE  
-- OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-<!-- 
 <!DOCTYPE html>
 <html>
 <head>
     <title>XHR3</title>
-    <script>
+    <script src="js/main.js"></script>
+<!--     <script>
         var html = "";
 
         // create new XHR instance through the constructor
@@ -70,7 +40,7 @@
 
         // event occured while sending and loading data
         function onprogresshandler(e) {
-            html += "onprogress (" + parseInt(e.loaded / e.totalSize * 100) + "%) <br/>";
+            html += "onprogress (" + parseInt(e.loaded / e.total * 100) + "%) <br/>";
             document.getElementById("divText").innerHTML = html;
         }
 
@@ -100,7 +70,7 @@
 
         // event occured when the request has completed (either in success or failure)
         function onloadendhandler(e) {
-            html += "onloadend<br/>";
+            html += "onloadend<br/>" + client.responseText;
             document.getElementById("divText").innerHTML = html;
         }
 
@@ -113,39 +83,17 @@
                 }
             }
         }
-    </script>
+    </script> -->
 </head>
 <body>
     <h1>XHR tutorial</h1>
-    <input type="button" value="Send XMLHttpRequest" onclick="sendRequest()" />
+    <input type="button" value="Send XMLHttpRequest" onclick="getChannelsWithMoreViewers()" />
     <input type="button" value="Abort Sending" onclick="abortRequest()" />
-    <div id="divText">
+    <div id="divText" style="color: white;">
     </div>
 </body>
 </html>
- -->
- 
- 
- 
- 
- 
- 
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="js/main.js"></script>
-</head>
 
-
-<body>
-	<button onclick="sync('http://172.24.226.21:8125');">send sync</button>
-    <button onclick="sync('http://google.com');">sync to google</button><br>
-    <button onclick="async('http://172.24.226.21:8125');">send async</button><br>
-    <button onclick="sync_jquery('http://172.24.226.21:8125',false,{type: 'ready'});">sync jquery</button>
-    <button onclick="sync_jquery('http://google.com',false,{});">sync jquery to google</button>
-</body>
-</html>
- 
  
  
  

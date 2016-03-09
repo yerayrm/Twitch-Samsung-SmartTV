@@ -3,7 +3,7 @@ var ItemsLimit = 100;
 var offset = 0;
 
 //URL
-var urlChannelsMoreViewers = 'https://api.twitch.tv/kraken/games/top?limit=' + ItemsLimit + '&offset=' + offset;
+var urlChannelsMoreViewers = 'https://api.twitch.tv/kraken/streams?limit=' + ItemsLimit + '&offset=' + offset;
 
 
 /**
@@ -24,13 +24,13 @@ function getChannelsWithMoreViewers() {
 				if (xmlHttp.status === 200) {
 					try {
 						console.log("success: " + xmlHttp.responseText);
-						document.getElementById("divText").innerHTML = xmlHttp.responseText;
+						//document.getElementById("divText").innerHTML = xmlHttp.responseText;
 					}
 					catch (err) {
 						console.log("error: " + err + " - response:" + xmlHttp.responseText);
 					}
 				} else {
-					console.log("error: " + xmlHttp.readyState);
+					console.log("error: " + xmlHttp.readyState + " - status: " + xmlHttp.status);
 				}
 			} else {
 				console.log("52 + readyState - " + xmlHttp.readyState);

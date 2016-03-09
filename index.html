@@ -1,99 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>XHR3</title>
-    <script src="js/main.js"></script>
-<!--     <script>
-        var html = "";
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twitch SmartTV</title>
 
-        // create new XHR instance through the constructor
-        var client = new XMLHttpRequest();
+<!-- CSS -->
+<link href="css/custom.css" rel="stylesheet" />
+<link href="css/bootstrap.css" rel="stylesheet" />
 
-        // register the corresponding event handlers
-        client.onloadstart = onloadstarthandler;
-        client.onprogress = onprogresshandler;
-        client.onabort = onaborthandler;
-        client.onerror = onerrorhandler;
-        client.onload = onloadhandler;
-        client.ontimeout = ontimeouthandler;
-        client.onloadend = onloadendhandler;
-        client.onreadystatechange = onreadystatechangehandler;
+<!-- JS Scripts -->
+<script src="js/main.js"></script>
 
-        // specify the http request method and the request URLs path
-        client.open("GET", "https://api.twitch.tv/kraken/games/top?limit=100&offset=0");
-
-        // send request
-        function sendRequest() {
-            client.send();
-        }
-
-        // abort request
-        function abortRequest() {
-            client.abort();
-        }
-
-        // event occured when the request starts
-        function onloadstarthandler(e) {
-            html += "onloadstart<br/>";
-            document.getElementById("divText").innerHTML = html;
-        }
-
-        // event occured while sending and loading data
-        function onprogresshandler(e) {
-            html += "onprogress (" + parseInt(e.loaded / e.total * 100) + "%) <br/>";
-            document.getElementById("divText").innerHTML = html;
-        }
-
-        // event occured when the request has been abored
-        function onaborthandler(e) {
-            html += "onabort<br/>";
-            document.getElementById("divText").innerHTML = html;
-        }
-
-        // event occured when the request has failed
-        function onerrorhandler(e) {
-            html += "onerror<br/>";
-            document.getElementById("divText").innerHTML = html;
-        }
-
-        // event occured when the request has successfully completed
-        function onloadhandler(e) {
-            html += "onload<br/>";
-            document.getElementById("divText").innerHTML = html;
-        }
-
-        // event occured when the author specified timeout has passed before the request could complete
-        function ontimeouthandler(e) {
-            html += "ontimeout<br/>";
-            document.getElementById("divText").innerHTML = html;
-        }
-
-        // event occured when the request has completed (either in success or failure)
-        function onloadendhandler(e) {
-            html += "onloadend<br/>" + client.responseText;
-            document.getElementById("divText").innerHTML = html;
-        }
-
-        // event occured when the readyState attribute changes at some seemingly arbitrary times for historical reasons
-        function onreadystatechangehandler(e) {
-            if (this.readyState == this.DONE) {
-                if (this.status == 200 && this.responseXML != null) {
-                    document.getElementById("divText").innerHTML = this.responseText;
-                    return;
-                }
-            }
-        }
-    </script> -->
 </head>
 <body>
-    <h1>XHR tutorial</h1>
-    <input type="button" value="Send XMLHttpRequest" onclick="getChannelsWithMoreViewers()" />
-    <input type="button" value="Abort Sending" onclick="abortRequest()" />
-    <div id="divText" style="color: white;">
-    </div>
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="col-md-3">
+				<img src="images/logo.png" height="150" width="150" alt="" />
+			</div>
+			<div class="col-md-6 header-title">
+				<p>CHANNELS</p>
+			</div>
+			<div class="col-md-3">
+				<!-- Some icons -->
+			</div>
+		</div>
+
+		<div class="row top-buffer">
+			<div class="col-md-3">
+				<img class="imgPreviewStreaming" src="images/demo_channel_live.jpg"/>
+			</div>
+			<div class="col-md-3">
+				<div class="container-image-preview">
+					<img class="imgPreviewStreaming" src="images/demo_channel_live.jpg" alt="" />
+					<div class="textPreviewStreaming">
+						<h3>Revenant</h2>
+						<h4>playing <strong>League of Legends</strong> for <strong>23.258</strong> viewers</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<img class="imgPreviewStreaming" src="images/demo_channel_live.jpg"/>
+			</div>
+			<div class="col-md-3">
+				<img class="imgPreviewStreaming" src="images/demo_channel_live.jpg"/>
+			</div>
+		</div>
+		
+		<div class="row top-buffer">
+			<div class="col-md-3">
+				<img class="imgPreviewStreaming" src="images/demo_channel_live.jpg"/>
+			</div>
+			<div class="col-md-3">
+				<div class="container-image-preview">
+					<img class="imgPreviewStreaming" src="images/demo_channel_live.jpg" alt="" />
+				</div>
+			</div>
+			<div class="col-md-3">
+				<img class="imgPreviewStreaming" src="images/demo_channel_live.jpg"/>
+			</div>
+			<div class="col-md-3">
+				<img class="imgPreviewStreaming" src="images/demo_channel_live.jpg"/>
+			</div>
+		</div>
+	</div>
+
+	<!-- Javascripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-
- 
- 
- 

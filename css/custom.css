@@ -1,0 +1,53 @@
+/* CONSTANTS */
+/** 
+	twitch color = #64459b 
+**/
+
+/* Header */
+.header {
+	background-color: #64459b;
+}
+
+.header p {
+	color: white;
+	font-size: 60px;
+	text-align: center;
+}
+
+.header .header-title {
+	height: 150px;
+	line-height: 150px;
+}
+
+.top-buffer { 
+	margin-top:20px; 
+}
+
+img.imgPreviewStreaming {
+	width:100%;
+	height:auto;
+}
+
+.textPreviewStreaming {
+	position: absolute; 
+   	bottom: 0; 
+   	left: 0; 
+  	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+} 
+
+.container-image-preview { 
+	position: relative; 
+	width: 100%;
+}
+
+.container-image-preview h3 { 
+	color: white;
+	margin-bottom: 0px;
+}
+
+.container-image-preview h4 { 
+	color: #64459b;
+	margin-top: 0px;
+}
